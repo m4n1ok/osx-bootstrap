@@ -1,7 +1,13 @@
-## Productive stuff
+coreutils
+findutils
+bash
+homebrew/dupes/grep
+# Productive stuff
 zsh
 zsh-completions
 zsh-syntax-highlighting
+autojump
+hub
 git
 git-flow
 wget
@@ -19,5 +25,3 @@ composer
 #Locahost tunnel
 ngrok
 
-## brew cask and more versions of casks
-caskroom/cask/brew-cask

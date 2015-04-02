@@ -20,11 +20,10 @@ plugins=(git brew brew-cask history-substring-search sublime common-aliases vagr
 
 source $ZSH/oh-my-zsh.sh
 
-source $(brew --prefix nvm)/nvm.sh
-export DOCKER_HOST=tcp://127.0.0.1:2375
-
-
 alias hosts='subl /etc/hosts'
 alias hs='homestead'
 alias casks="subl ~/Developer/osx-bootstrap/Caskfile"
 alias brews="subl ~/Developer/osx-bootstrap/Brewfile"
+alias dmg="brew cask install --appdir=/Applications"
+
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh

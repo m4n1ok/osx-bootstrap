@@ -2,8 +2,12 @@
 
 # Web
 google-chrome
+firefox
 twitter
 utorrent
+cyberduck
+mailbox
+
 # Terminal
 iterm2
 
@@ -18,22 +22,26 @@ boot2docker
 # Text editing
 sublime-text3
 atom
-# Markdown
-macdown
+phpstorm
 # Database
 sequel-pro
+mysqlworkbench
 # Documentation
 dash
 
 ## Design
 sketch
+imageoptim
+pixel-winch
+glueprint
 
 ## Desktop
 # QuickLook plugins
 qlcolorcode qlstephen qlmarkdown quicklook-json betterzipql suspicious-package
 # Window management
 spectacle
-rightzoom
+# rightzoom (not needed anymore on Yosemite)
+trim-enabler
 
 ## Media
 # Video player
@@ -50,12 +58,15 @@ licecap
 nvalt
 # Collaboration
 slack
+skype
+hipchat
+harvest
 
 ## Storage
 # Online storage
 dropbox
 google-drive
 infinit
+disk-inventory-x
 # Compression
-keka
-
+the-unarchiver

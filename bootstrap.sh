@@ -7,6 +7,8 @@ brew update
 # Install oh-my-zsh to beautify and manage zsh
 curl -L http://install.ohmyz.sh | sh
 
+brew install caskroom/cask/brew-cask
+
 # Install brew taps
 while read in; do brew tap "$in"; done < Taps
 

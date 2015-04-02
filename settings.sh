@@ -6,10 +6,10 @@
 # General
 # =======
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "foxmacpro"
-sudo scutil --set HostName "foxmacpro"
-sudo scutil --set LocalHostName "foxmacpro"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "foxmacpro"
+sudo scutil --set ComputerName "ifoxmacbook"
+sudo scutil --set HostName "ifoxmacbook"
+sudo scutil --set LocalHostName "ifoxmacbook"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "ifoxmacbook"
 
 # Restart automatically if the computer freezes
 sudo systemsetup -setrestartfreeze on
@@ -77,9 +77,6 @@ defaults write com.apple.finder AppleShowAllFiles -bool false
 
 # Finder: allow text selection in Quick Look
 defaults write com.apple.finder QLEnableTextSelection -bool true
-
-# Disable the warning when changing a file extension
-defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 #Show indicator lights for open applications in the Dock
 defaults write com.apple.dock show-process-indicators -bool true
