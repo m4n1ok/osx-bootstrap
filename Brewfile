@@ -13,6 +13,7 @@ git-flow
 wget
 tmux
 python
+fpp
 
 #Node
 node
