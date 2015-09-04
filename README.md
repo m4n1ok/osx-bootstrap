@@ -15,7 +15,7 @@ curl --silent https://raw.githubusercontent.com/ifox/osx-bootstrap/master/instal
 * Review and customize the apps installed from Brewfile & Caskfile
 
 ```
-`bash bootstrap.sh`
+bash bootstrap.sh
 ```
 
 ## Requirements
