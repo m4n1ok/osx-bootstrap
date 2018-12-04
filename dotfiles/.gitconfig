@@ -1,0 +1,19 @@
+[user]
+	email = quentin@area17.com
+	name = Quentin Renard
+[push]
+    default = simple
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+    required = true
+[alias]
+    unstage = reset HEAD
+    undo-commit = reset --soft HEAD^
+    set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
+    share = !git push --set-upstream origin `git symbolic-ref --short HEAD`
+    merge-into = !sh -c '_CURRENT_BRANCH=$(git symbolic-ref --short HEAD) && git checkout $1 && git pull && git merge --no-ff $_CURRENT_BRANCH' -
+    quick-stats = ! /usr/local/bin/git-quick-stats
+[core]
+    editor = /usr/bin/vim

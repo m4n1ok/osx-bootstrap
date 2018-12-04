@@ -1,8 +1,7 @@
 coreutils
 findutils
 bash
-homebrew/dupes/grep
-# Productive stuff
+grep
 zsh
 zsh-completions
 zsh-syntax-highlighting
@@ -15,14 +14,12 @@ tmux
 python
 fpp
 
-#Node
+ansible
+awscli
+mysql@5.7
+
 node
 
 #PHP
-php56
-php56-mcrypt
+php@7.2
 composer
-
-#Locahost tunnel
-ngrok
-

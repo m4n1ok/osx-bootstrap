@@ -7,8 +7,6 @@ brew update
 # Install oh-my-zsh to beautify and manage zsh
 curl -L http://install.ohmyz.sh | sh
 
-brew install caskroom/cask/brew-cask
-
 # Install brew taps
 while read in; do brew tap "$in"; done < Taps
 
@@ -17,21 +15,6 @@ brew install $(cat Brewfile|grep -v "#")
 
 # Install casks
 brew cask install --appdir="/Applications" $(cat Caskfile|grep -v "#")
-
-# Install fonts
-fonts=(
-  font-roboto
-  font-open-sans
-  font-lato
-  font-alegreya
-  font-montserrat
-  font-inconsolata
-  font-quicksand
-  font-raleway
-  font-ubuntu
-)
- 
-brew cask install ${fonts[@]}
 
 brew cleanup
 
@@ -42,4 +25,16 @@ chsh -s /usr/local/bin/zsh
 # Set standard settings
 source 'settings.sh'
 source 'symlink-dotfiles.sh'
+
+# Hide "last login" line when starting a new terminal session
+touch $HOME/.hushlogin
+
+# Install global composer packages
+#composer global require "laravel/envoy=~1.0"
+#composer global require friendsofphp/php-cs-fixer
+#composer global require laravel/valet
+#valet install
+
+# Install global npm packages
+#npm install -g gulp
 

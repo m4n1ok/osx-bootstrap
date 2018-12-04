@@ -3,10 +3,7 @@
 # Web
 google-chrome
 firefox
-twitter
-utorrent
 cyberduck
-mailbox
 
 # Terminal
 iterm2
@@ -14,34 +11,37 @@ iterm2
 ## Boxes
 # Virtualization
 vagrant
+vagrant-manager
 virtualbox
 # Containers
-boot2docker
+#boot2docker
+docker
 
 ## Coding
 # Text editing
 sublime-text3
-atom
 phpstorm
 # Database
 sequel-pro
 mysqlworkbench
+psequel
 # Documentation
 dash
 
 ## Design
 sketch
 imageoptim
-pixel-winch
-glueprint
+#pixel-winch
+#glueprint
 
 ## Desktop
 # QuickLook plugins
-qlcolorcode qlstephen qlmarkdown quicklook-json betterzipql suspicious-package
+qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv webpquicklook suspicious-package
+
 # Window management
-spectacle
+#spectacle
 # rightzoom (not needed anymore on Yosemite)
-trim-enabler
+#trim-enabler
 
 ## Media
 # Video player
@@ -51,11 +51,12 @@ spotify
 # Recording
 screenflow
 licecap
+handbrake
 
 
 ## Work
 # Note taking
-nvalt
+#nvalt
 # Collaboration
 slack
 skype
@@ -65,8 +66,13 @@ harvest
 ## Storage
 # Online storage
 dropbox
-google-drive
-infinit
 disk-inventory-x
 # Compression
-the-unarchiver
+#the-unarchiver
+keka
+
+#1password
+1password-cli
+cakebrew
+gitkraken
+#github-desktop

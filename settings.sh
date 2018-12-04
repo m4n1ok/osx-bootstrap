@@ -6,10 +6,10 @@
 # General
 # =======
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "ifoxmacbook"
-sudo scutil --set HostName "ifoxmacbook"
-sudo scutil --set LocalHostName "ifoxmacbook"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "ifoxmacbook"
+sudo scutil --set ComputerName "ifoxmbpnyc"
+sudo scutil --set HostName "ifoxmbpnyc"
+sudo scutil --set LocalHostName "ifoxmbpnyc"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "ifoxmbpnyc"
 
 # Restart automatically if the computer freezes
 sudo systemsetup -setrestartfreeze on
@@ -73,7 +73,7 @@ chflags nohidden ~/Library
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Finder: show hidden files by default
-defaults write com.apple.finder AppleShowAllFiles -bool false
+defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Finder: allow text selection in Quick Look
 defaults write com.apple.finder QLEnableTextSelection -bool true
@@ -100,3 +100,45 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
 
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
+
+# Save to disk (not to iCloud) by default
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
+# Check for software updates daily, not just once per week
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+
+# Disable local Time Machine snapshots
+#sudo tmutil disablelocal
+
+# Use scroll gesture with the Ctrl (^) modifier key to zoom
+#defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+#defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+
+# Follow the keyboard focus while zoomed in
+#defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
+
+# Enable HiDPI display modes (requires restart)
+sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+
+# Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
+defaults write com.apple.finder QuitMenuItem -bool true
+
+# Display full POSIX path as Finder window title
+#defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+# Disable disk image verification
+defaults write com.apple.frameworks.diskimages skip-verify -bool true
+defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
+defaults write com.apple.frameworks.diskimages skip-verify-remote -bool true
+
+# Automatically open a new Finder window when a volume is mounted
+defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
+defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
+defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
+
+# Enable snap-to-grid for icons on the desktop and in other icon views
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
