@@ -4,7 +4,7 @@ osx-bootstrap
 Personal bootstrap script for new OSX installs
 
 ```
-curl --silent https://raw.githubusercontent.com/ifox/osx-bootstrap/master/install.sh | sh
+curl --silent https://raw.githubusercontent.com/m4n1ok/osx-bootstrap/master/install.sh | sh
 ```
 
 ## Customize Install
