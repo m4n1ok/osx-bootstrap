@@ -10,6 +10,9 @@ curl -L http://install.ohmyz.sh | sh
 # Install brew taps
 while read in; do brew tap "$in"; done < Taps
 
+# Set standard settings
+source 'settings.sh'
+
 # Install brews
 brew tap sambadevi/powerlevel9k
 brew tap homebrew/cask-fonts/font-hack-nerd-font
@@ -25,8 +28,6 @@ echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
 sudo mv /etc/{zshenv,zshrc}
 chsh -s /usr/local/bin/zsh
 
-# Set standard settings
-source 'settings.sh'
 source 'symlink-dotfiles.sh'
 
 # Hide "last login" line when starting a new terminal session
