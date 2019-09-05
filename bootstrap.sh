@@ -12,7 +12,7 @@ while read in; do brew tap "$in"; done < Taps
 
 # Install brews
 brew tap sambadevi/powerlevel9k
-brew tap homebrew/cask-fonts
+brew tap homebrew/cask-fonts/font-hack-nerd
 brew install $(cat Brewfile|grep -v "#")
 
 # Install casks
