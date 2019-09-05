@@ -9,7 +9,7 @@ curl --silent https://raw.githubusercontent.com/ifox/osx-bootstrap/master/instal
 
 ## Customize Install
 
-* `git clone https://github.com/ifox/osx-bootstrap.git` to get these files locally
+* `git clone https://github.com/m4n1ok/osx-bootstrap.git` to get these files locally
 * Edit `settings.sh` with your computer name
 * Edit `symlink-dotfiles.sh` to define your `$dev` directory
 * Review and customize the apps installed from Brewfile & Caskfile

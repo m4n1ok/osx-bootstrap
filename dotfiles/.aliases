@@ -1,4 +1,4 @@
-alias a="php artisan"
+alias pa="php artisan"
 alias brews="subl ~/Code/osx-bootstrap/Brewfile"
 alias casks="subl ~/Code/osx-bootstrap/Caskfile"
 alias dmg="brew cask install --appdir=/Applications"

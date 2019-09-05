@@ -21,6 +21,7 @@ docker
 # Text editing
 sublime-text3
 phpstorm
+webstorm
 # Database
 sequel-pro
 mysqlworkbench
@@ -29,7 +30,7 @@ psequel
 dash
 
 ## Design
-sketch
+figma
 imageoptim
 #pixel-winch
 #glueprint
@@ -37,6 +38,7 @@ imageoptim
 ## Desktop
 # QuickLook plugins
 qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv webpquicklook suspicious-package
+
 
 # Window management
 #spectacle
@@ -49,8 +51,6 @@ vlc
 # Spotify player
 spotify
 # Recording
-screenflow
-licecap
 handbrake
 
 
@@ -59,14 +59,11 @@ handbrake
 #nvalt
 # Collaboration
 slack
-skype
-hipchat
+messenger
 harvest
 
 ## Storage
 # Online storage
-dropbox
-disk-inventory-x
 # Compression
 #the-unarchiver
 keka
@@ -74,5 +71,4 @@ keka
 #1password
 1password-cli
 cakebrew
-gitkraken
-#github-desktop
+sourcetree
