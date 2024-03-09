@@ -1,14 +1,7 @@
 alias pa="php artisan"
-alias brews="subl ~/Code/osx-bootstrap/Brewfile"
-alias casks="subl ~/Code/osx-bootstrap/Caskfile"
 alias dmg="brew cask install --appdir=/Applications"
-alias hosts='subl /etc/hosts'
-alias sshconfig="subl ~/.ssh/config"
-
-alias gbranch="git checkout master && git pull && git checkout -b"
-alias gmst="git merge-into staging"
-alias gmma="git merge-into master"
-alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias hosts='webstorm /etc/hosts'
+alias sshconfig="webstorm ~/.ssh/config"
 
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
@@ -18,7 +11,6 @@ alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
-alias vu="vagrant up"
-alias vgs="vagrant global-status"
-alias vh="vagrant halt"
-alias vssh="vagrant ssh"
+alias ls='lsd'
+
+alias dep='/Users/antonin/.composer/vendor/bin/dep'

@@ -3,10 +3,7 @@ findutils
 bash
 grep
 zsh
-zsh-completions
-zsh-syntax-highlighting
-autojump
-hub
+vim
 htop
 git
 git-flow
@@ -14,15 +11,8 @@ wget
 tmux
 python
 fpp
-powerlevel9k
-font-hack-nerd-font
-
-ansible
-awscli
-mysql@5.7
-
-node
+powerlevel10k
 
 #PHP
-php@7.2
+php
 composer

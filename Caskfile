@@ -9,49 +9,28 @@ cyberduck
 iterm2
 
 ## Boxes
-# Virtualization
-vagrant
-vagrant-manager
-virtualbox
 # Containers
 #boot2docker
-docker
+orbstack
 
 ## Coding
 # Text editing
-phpstorm
-webstorm
+raycast
+jetbrains-toolbox
+dbngin
+tableplus
 # Database
-sequel-pro
-mysqlworkbench
-psequel
 # Documentation
-dash
 
 ## Design
 figma
-imageoptim
-#pixel-winch
-#glueprint
-
-## Desktop
-# QuickLook plugins
-qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv webpquicklook suspicious-package
-
-
-# Window management
-#spectacle
-# rightzoom (not needed anymore on Yosemite)
-#trim-enabler
 
 ## Media
-# Video player
 vlc
-# Spotify player
 spotify
+
 # Recording
 handbrake
-
 
 ## Work
 # Note taking
@@ -59,7 +38,9 @@ handbrake
 # Collaboration
 slack
 messenger
-harvest
+discord
+zoom
+
 
 ## Storage
 # Online storage
@@ -67,7 +48,5 @@ harvest
 #the-unarchiver
 keka
 
-#1password
 1password-cli
-cakebrew
 sourcetree
