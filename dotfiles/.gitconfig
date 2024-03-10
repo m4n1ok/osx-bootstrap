@@ -46,7 +46,7 @@
 	aliases = !git config --list | grep ^alias\\. | cut -c 7- | grep -Ei --color \"$1\" "#"
 [core]
 	editor = /usr/bin/vim
-	excludesfile = /Users/antonin/.gitignore_global
+	excludesfile = /Users/antonincaudron/.gitignore_global
 [color "status"]
 	branch = 5 normal
 	added = 10 normal
@@ -111,8 +111,6 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[commit]
-	template = /Users/antonin/.stCommitMsg
 [init]
 	defaultBranch = main
 [pull]
@@ -121,3 +119,6 @@
 	enabled = true
 [merge]
 	conflictstyle = diff3
+[maintenance]
+	repo = /Users/antonincaudron/.zsh-plugins/zsh-znap
+	repo = /Users/antonincaudron/.zsh-plugins/romkatv/powerlevel10k
