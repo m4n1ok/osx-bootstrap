@@ -107,7 +107,7 @@
 	colorMoved = zebra
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -122,3 +122,7 @@
 [maintenance]
 	repo = /Users/antonincaudron/.zsh-plugins/zsh-znap
 	repo = /Users/antonincaudron/.zsh-plugins/romkatv/powerlevel10k
+[commit]
+	template = /Users/antonincaudron/.stCommitMsg
+[url "git@github-elevenlabs:elevenlabs"]
+	insteadOf = git@github.com:elevenlabs

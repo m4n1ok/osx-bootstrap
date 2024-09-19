@@ -39,11 +39,14 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 
 znap prompt romkatv/powerlevel10k
 
+znap source ohmyzsh/ohmyzsh lib/{git,theme-and-appearance}
 znap source ohmyzsh/ohmyzsh plugins/colored-man-pages
+
+ZSH_AUTOSUGGEST_STRATEGY=( history completion )
 znap source marlonrichert/zsh-autocomplete
 
-ZSH_AUTOSUGGEST_STRATEGY=( history )
 znap source zsh-users/zsh-autosuggestions
+
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=( main brackets )
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -89,3 +92,8 @@ eval "$(~/.local/bin/mise activate zsh)"
 #Yarn
 export PATH="$HOME/.yarn/bin:$PATH"
 
+
+# tabtab source for packages
+# for pnpm autocomplete
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
