@@ -126,3 +126,5 @@
 	template = /Users/antonincaudron/.stCommitMsg
 [url "git@github-elevenlabs:elevenlabs"]
 	insteadOf = git@github.com:elevenlabs
+[checkout]
+	defaultRemote = origin
