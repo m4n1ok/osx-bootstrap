@@ -11,6 +11,8 @@ wget
 tmux
 python
 fpp
+lsd
+zsh-syntax-highlighting
 powerlevel10k
 
 #PHP

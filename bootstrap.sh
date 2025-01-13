@@ -23,15 +23,15 @@ echo "Installing brew taps..."
 while read in; do brew tap "$in"; done < Taps
 
 # Set standard settings
-source 'settings.sh'
+# source 'settings.sh'
 
 # Install brews
 echo "Installing brew apps..."
 brew install $(cat Brewfile|grep -v "#")
 
 # Install casks
-echo "Installing cask apps..."
-brew install --appdir="/Applications" --cask $(cat Caskfile|grep -v "#")
+#echo "Installing cask apps..."
+#brew install --appdir="/Applications" --cask $(cat Caskfile|grep -v "#")
 
 # Install fonts
 echo "Installing Nerd fonts..."

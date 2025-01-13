@@ -1,5 +1,5 @@
 [user]
-	email = antonin@area17.com
+	email = antonin.caudron@gmail.com
 	name = antonin caudron
 [push]
 	default = simple
@@ -120,11 +120,9 @@
 [merge]
 	conflictstyle = diff3
 [maintenance]
-	repo = /Users/antonincaudron/.zsh-plugins/zsh-znap
-	repo = /Users/antonincaudron/.zsh-plugins/romkatv/powerlevel10k
+	repo = /Users/antonin/.zsh-plugins/zsh-znap
+	repo = /Users/antonin/.zsh-plugins/romkatv/powerlevel10k
 [commit]
-	template = /Users/antonincaudron/.stCommitMsg
-[url "git@github-elevenlabs:elevenlabs"]
-	insteadOf = git@github.com:elevenlabs
+	template = /Users/antonin/.stCommitMsg
 [checkout]
 	defaultRemote = origin
