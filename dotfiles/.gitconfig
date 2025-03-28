@@ -46,7 +46,7 @@
 	aliases = !git config --list | grep ^alias\\. | cut -c 7- | grep -Ei --color \"$1\" "#"
 [core]
 	editor = /usr/bin/vim
-	excludesfile = /Users/antonincaudron/.gitignore_global
+	excludesfile = /Users/antonin/.gitignore_global
 [color "status"]
 	branch = 5 normal
 	added = 10 normal
@@ -124,3 +124,5 @@
 	repo = /Users/antonin/.zsh-plugins/romkatv/powerlevel10k
 [checkout]
 	defaultRemote = origin
+[includeIf "gitdir:~/CODE/A17/"]
+  path = .gitconfig-A17

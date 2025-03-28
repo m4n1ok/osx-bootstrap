@@ -9,6 +9,9 @@ eval "$($HOME/.local/bin/mise activate zsh --shims)"
 #Yarn
 export PATH="$HOME/.yarn/bin:$PATH"
 
+#Dbngin
+export PATH="/Users/Shared/DBngin/postgresql/17.0/bin:$PATH"
+
 # Added by OrbStack: command-line tools and integration
 # source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 
