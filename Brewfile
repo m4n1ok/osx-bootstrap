@@ -16,5 +16,5 @@ zsh-syntax-highlighting
 powerlevel10k
 
 #PHP
-php
-composer
+# php
+# composer
