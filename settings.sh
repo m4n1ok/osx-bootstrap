@@ -6,9 +6,9 @@
 # General
 # =======
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "antoninmbp"
-sudo scutil --set HostName "antoninmbp"
-sudo scutil --set LocalHostName "antoninmbp"
+sudo scutil --set ComputerName "antoninmba"
+sudo scutil --set HostName "antoninmba"
+sudo scutil --set LocalHostName "antoninmba"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "antoninmbp"
 
 # Restart automatically if the computer freezes
