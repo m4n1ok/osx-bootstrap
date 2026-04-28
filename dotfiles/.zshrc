@@ -33,24 +33,24 @@ export ZSH="$HOME/.oh-my-zsh"
 zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
+# Load prompt first for better performance
 znap prompt romkatv/powerlevel10k
 
+# Load lighter oh-my-zsh libraries
 znap source ohmyzsh/ohmyzsh lib/{git,theme-and-appearance}
 znap source ohmyzsh/ohmyzsh plugins/colored-man-pages
 
-ZSH_AUTOSUGGEST_STRATEGY=( history completion )
+# Autocomplete configuration (optimized settings)
+zstyle ':autocomplete:*' min-input 1
+zstyle ':autocomplete:*' default-context ''
+zstyle ':autocomplete:*' delay 0.1  # seconds (reduced for better responsiveness)
+
+# Load heavier plugins last
 znap source marlonrichert/zsh-autocomplete
+znap source zsh-users/zsh-syntax-highlighting
 
-znap source zsh-users/zsh-autosuggestions
-
-
+# Syntax highlighting configuration
 ZSH_HIGHLIGHT_HIGHLIGHTERS=( main brackets )
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Autocomplete style
-#zstyle ':autocomplete:*' min-input 4
-#zstyle ':autocomplete:*' default-context history-incremental-search-backward
-zstyle ':autocomplete:*' delay 0.2  # seconds (float)
 
 #Reset history key bindings to Zsh default
 () {
@@ -70,7 +70,7 @@ zstyle ':autocomplete:*' delay 0.2  # seconds (float)
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='webstorm'
+  export EDITOR='cursor'
 fi
 
 

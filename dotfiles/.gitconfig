@@ -10,6 +10,7 @@
 	process = git-lfs filter-process
 	required = true
 [alias]
+	delete-merged = "!git branch --merged | grep -v '^\\*\\|master\\|main' | xargs git branch -d"
 	br = branch
 	ci = commit
 	co = checkout
@@ -122,7 +123,13 @@
 [maintenance]
 	repo = /Users/antonin/.zsh-plugins/zsh-znap
 	repo = /Users/antonin/.zsh-plugins/romkatv/powerlevel10k
+	repo = /Users/antonin/.zsh-plugins/marlonrichert/zsh-autocomplete
+	repo = /Users/antonin/.zsh-plugins/ohmyzsh/ohmyzsh
+	repo = /Users/antonin/.zsh-plugins/zsh-users/zsh-autosuggestions
+	repo = /Users/antonin/.zsh-plugins/zsh-users/zsh-syntax-highlighting
 [checkout]
 	defaultRemote = origin
 [includeIf "gitdir:~/Code/A17/"]
   path = .gitconfig-A17
+[includeIf "gitdir:~/Code/DecimalStudios/"]
+  path = .gitconfig-DecimalStudios
