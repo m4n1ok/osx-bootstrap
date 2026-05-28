@@ -59,9 +59,10 @@ do
 done
 brew cleanup
 
-echo "/usr/local/bin/zsh" | sudo tee -a /etc/shells
+zsh_path="$(brew --prefix)/bin/zsh"
+echo "$zsh_path" | sudo tee -a /etc/shells
 sudo mv /etc/{zshenv,zshrc}
-chsh -s /usr/local/bin/zsh
+chsh -s "$zsh_path"
 
 source 'symlink-dotfiles.sh'
 
