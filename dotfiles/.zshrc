@@ -23,6 +23,20 @@ znap prompt romkatv/powerlevel10k
 znap source ohmyzsh/ohmyzsh lib/{git,theme-and-appearance}
 znap source ohmyzsh/ohmyzsh plugins/colored-man-pages
 
+# g-plane/pnpm-shell-completion: workspace filters, deps, npm scripts (needs release binary)
+# https://github.com/g-plane/pnpm-shell-completion
+() {
+  znap clone g-plane/pnpm-shell-completion || return 0
+  local repo=~[g-plane/pnpm-shell-completion]
+  [[ -d $repo ]] || return 0
+  if [[ ! -x $repo/pnpm-shell-completion ]]; then
+    (cd $repo && zsh ./zplug.zsh) || return 0
+  fi
+  [[ -x $repo/pnpm-shell-completion ]] || return 0
+  path=($repo $path)
+  znap source g-plane/pnpm-shell-completion
+}
+
 # Autocomplete configuration (optimized settings)
 zstyle ':autocomplete:*' min-input 1
 zstyle ':autocomplete:*' default-context ''
@@ -46,9 +60,3 @@ fi
 
 # aliases
 source ~/.aliases
-
-
-# tabtab source for packages
-# for pnpm autocomplete
-# uninstall by removing these lines
-[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
